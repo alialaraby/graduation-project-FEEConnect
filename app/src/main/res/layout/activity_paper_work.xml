@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alisakralaraby.feeconnectdemo2.PaperWorkActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:padding="10dp"
+                    android:id="@+id/webViewPaperWork"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:id="@+id/paperWorkLinearLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="خاص بالطلاب الجدد والحاليين"
+                    android:textSize="20sp"
+                    android:padding="4dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:text="كيفية الالتحاق بالكلية"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/btnjoiningCollege" />
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textStyle="bold"
+                        android:paddingRight="12dp"
+                        android:background="@color/colorPrimary"
+                        android:text="كيفية السكن فى المدينة الجامعية"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/btnjoininghousing" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:text="عمل بدل فاقد للكارنية"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/btnIdCardReplacement" />
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textStyle="bold"
+                        android:paddingRight="12dp"
+                        android:background="@color/colorPrimary"
+                        android:text="عمل مناسبات (events)"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/btnOrganizingEvents" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:text="عمل التماس/تظلم"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/btnEltimasTathalom" />
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textStyle="bold"
+                        android:paddingRight="12dp"
+                        android:background="@color/colorPrimary"
+                        android:text="الانضمام الي الاتحاد"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/btnJoiningEtihad" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/btnSahbAwrak"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="سحب الاوراق"
+                        />
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="2dp"
+                        android:id="@+id/btnKaidFasl"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="شهادة قيد/فصل"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/btnTarbeaAskarea"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="التربيه العسكريه"
+                        />
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/btnSenTagnid"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="بلوغ سن التجنيد"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="اخلاء طرف"
+                        android:id="@+id/btnEkhlaaTaraf"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        />
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="عمل حساب علي الشبكة"
+                        android:id="@+id/btnWifiAccount"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="خاص بالخريجين والدراسات العليا"
+                    android:textSize="20sp"
+                    android:padding="4dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/btnGraduatesInstructions"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="تعليمات للخريجين"
+                        />
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/btnDerasatOlea"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="الدراسات العليا"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/btnPermanentDocument"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="استخراج الشهادة الدائمة"
+                        />
+                    <Button
+                        android:layout_width="190dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:text="استخراج الشهادة المؤقتة"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/btnTemporaryDocument" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>

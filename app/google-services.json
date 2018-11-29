@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "699659965723",
+    "firebase_url": "https://fee-connect-834db.firebaseio.com",
+    "project_id": "fee-connect-834db",
+    "storage_bucket": "fee-connect-834db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699659965723:android:1e0ebcdca7a09e63",
+        "android_client_info": {
+          "package_name": "com.alisakralaraby.feeconnectdemo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699659965723-dpdfo2hhg7e8h6l3u6lpqic7e0i2vevl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alisakralaraby.feeconnectdemo2",
+            "certificate_hash": "e7c96d1956df683ebeee8668fd199a6f26a0be5d"
+          }
+        },
+        {
+          "client_id": "699659965723-5ob4fkg1vjtkiqfqd979o7s9c200basb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQWH2sfDEgTpq_xDX4fISBcW9e-RYhkuY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699659965723-5ob4fkg1vjtkiqfqd979o7s9c200basb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

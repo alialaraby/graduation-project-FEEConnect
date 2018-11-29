@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alisakralaraby.feeconnectdemo2">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".train_activities.MenoufCairoActivity"
+            android:label="@string/title_activity_menouf_to_cairo"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity
+            android:name=".train_activities.MenoufTantaActivity"
+            android:label="@string/title_activity_menouf_to_tanta"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity
+            android:name=".train_activities.MenoufBenhaActivity"
+            android:label="@string/title_activity_menouf_to_benha"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity
+            android:name=".train_activities.MenoufKafrZiatActivity"
+            android:label="@string/title_activity_menouf_to_kafrziat"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity android:name=".AddPostActivity" />
+        <activity
+            android:name=".AnnouncementsActivity"
+            android:label="@string/title_activity_announcements"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alisakralaraby.feeconnectdemo2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HomePageActivity"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VisitorsActivity"
+            android:label="@string/title_activity_visitors"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity
+            android:name=".AddAlarmActivity"
+            android:label="@string/title_activity_setalarms"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity
+            android:name=".AddNoteActivity"
+            android:label="@string/title_activity_add_note"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditYourNoteActivity"
+            android:label="@string/title_activity_edit_note"
+            android:parentActivityName=".AddNoteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".FindAnAppartmentActivity"
+            android:label="@string/title_activity_find_an_appartment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AddAppartmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TablesActivity"
+            android:label="@string/title_activity_tables"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/title_activity_events"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AddEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CommunityActivity"
+            android:label="@string/title_activity_community"
+            android:parentActivityName=".FindAnAppartmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AddCommunityMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaperWorkActivity"
+            android:label="@string/title_activity_paperwork"
+            android:screenOrientation="portrait"
+            android:theme="@style/OtherActivitiesTheme" />
+        <activity android:name=".AboutUsContactUsActivity" />
+    </application>
+
+</manifest>

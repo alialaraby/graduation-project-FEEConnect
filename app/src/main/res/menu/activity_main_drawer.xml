@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_announcements"
+            android:icon="@drawable/announcement"
+            android:title="Announcements" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/events"
+            android:title="Up Comming Events" />
+        <item
+            android:id="@+id/nav_Tables"
+            android:icon="@drawable/tables"
+            android:title="Tables" />
+        <item
+            android:id="@+id/nav_house"
+            android:icon="@drawable/house"
+            android:title="Get an Appartment" />
+        <item
+            android:id="@+id/nav_paper_work"
+            android:icon="@drawable/paper_work"
+            android:title="Do Your Paper Work" />
+        <item
+            android:id="@+id/nav_catch_train"
+            android:icon="@drawable/train"
+            android:title="Catch a Train" />
+        <item
+            android:id="@+id/nav_add_note"
+            android:title="Take a Note"
+            android:icon="@drawable/take_note"/>
+        <item
+            android:id="@+id/nav_official_account"
+            android:icon="@drawable/user_account"
+            android:title="Official Account" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/aboutUs"
+                android:icon="@drawable/about_us"
+                android:title="about us"
+                />
+            <item
+                android:id="@+id/contactUs"
+                android:icon="@drawable/contact_us"
+                android:title="contact us"
+                />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

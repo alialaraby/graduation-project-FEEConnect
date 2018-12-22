@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FEEConnectDemo2.iml" filepath="$PROJECT_DIR$/FEEConnectDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graduation-project-FEEConnect.iml" filepath="$PROJECT_DIR$/graduation-project-FEEConnect.iml" />
     </modules>
   </component>
 </project>

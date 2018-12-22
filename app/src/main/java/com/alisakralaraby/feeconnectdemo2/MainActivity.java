@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity
 
         /**/
         //firebase authentication functionality (signup and login)
-        authStateListener = new FirebaseAuth.AuthStateListener() {
+        /*authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity
                             RC_SIGN_IN);
                 }
             }
-        };
+        };*/
 
         //creating and assigning the navigation drawer to the xml one
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     //case the signin is successful, enter the app just fine
-    @Override
+    /*@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RC_SIGN_IN){
@@ -166,22 +166,22 @@ public class MainActivity extends AppCompatActivity
                 finish();
             }
         }
-    }
+    }*/
     //remove the authentication when the app pauses
     @Override
     protected void onPause() {
         super.onPause();
-        /**/
+        /*
         if (authStateListener != null){
 
             firebaseAuth.removeAuthStateListener(authStateListener);
-        }
+        }*/
     }
     //confirm authentication when the app is resumed
     @Override
     protected void onResume() {
         super.onResume();
-        firebaseAuth.addAuthStateListener(authStateListener);
+        //firebaseAuth.addAuthStateListener(authStateListener);
     }
 
     //this is the options menu
@@ -209,10 +209,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         displayFragment(id);
-        if (id == R.id.nav_logout){
-
-            AuthUI.getInstance().signOut(this);
-        }else if (id == R.id.nav_announcements){
+        if (id == R.id.nav_announcements){
 
             startActivity(new Intent(getApplicationContext(), AnnouncementsActivity.class));
         }else if (id == R.id.nav_add_note){
